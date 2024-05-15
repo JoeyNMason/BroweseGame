@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --background-color: #c8a5c2;
+    --header-color: #b885b3;
+    --text-color: whitesmoke;
+    --movie-bg-color: #e5c8e5;
+}
+
+/* universal changes */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+}
+
+/* body changes */
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: var(--background-color);
+}
+
+/* changes main */
+main{
+    /* margin: 2rem; */
+    width: 90%;
+    margin-inline: auto;
+}
+
+/* change image */
+img{
+    max-width: 100%;
+    display: block;
+    border-radius: 6px;
+}
+
+/* change the header */
+header{
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--header-color);
+    font-family: inherit;
+    
+}
+
+/* Change the Website Title */
+h1{
+    display: flex;
+    justify-content: left;
+    font-weight: bolder;
+    color: var(--text-color);
+}
+
+/* search box */
+.search{
+    background-color: transparent;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 1.2rem;
+    padding: 0.6rem 4rem;
+    color: var(--text-color);
+    border: 2px solid var(--background-color);
+}
+
+.search:focus{
+    outline: none;
+    background-color: var(--background-color);
+}
+
+/* info card container */
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 1rem;
+    margin-top: 4rem;
+}
+
+/* info card box */
+.box{
+    background-color: var(--background-color);
+    border: 1px solid var(--header-color);
+    border-radius: 6px;
+    padding: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+}
+
