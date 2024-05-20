@@ -1,0 +1,26 @@
+// animation completion
+setTimeout(getData, 1250)
+
+function getData(){
+    
+    // card img 
+    header.innerHTML = '' 
+
+    // card title
+    title.innerHTML = ''
+
+    // excerpt
+    excerpt.innerHTML = ''
+
+    // profile image
+    profile_img.innerHTML = ''
+
+    // tagline
+    quote.innerHTML = ''
+
+    // date
+    date.innerHTML = ''
+
+    animated_bgs.forEach((bg) => bg.classList.remove("animated-bg"))
+    animated_bg_texts.forEach((bg) => bg.classList.remove("animated-bg-text"))
+}
